@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(252, 252, 252);
+}
+
+header {
+    background:rgb(2, 16, 24);
+    color: #ffffff;
+    padding: 0.1px 0;
+    text-align: left;
+}
+header img {
+    width: 90px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensures proper layout */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+h1 {
+    margin-left: 2em;
+    font-size:2em;
+    text-align:left;
+}
+
+nav {
+    margin: 0.6px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.article {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    color: #35424a;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+nav table {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    border-collapse: collapse; /* Optional: Makes the table look cleaner */
+}
+
+nav table th {
+    padding:5x; /* Adds spacing inside table cells */
+    font-size: 0.2; /* Increases font size for better readability */
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.menu-links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.hamburger-menu:hover .menu-links {
+    display: block;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures the video stays behind other content */
+}
+
+.photo-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the background stays behind other content */
+    overflow: hidden;
+}
+
+.photo-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire screen */
+}
+.fixed-image {
+    position: absolute; /* Fixes the image position on the screen */
+    bottom: 12px; /* Adjusts the image's position from the top */
+    left: 100px; /* Adjusts the image's position from the left */
+    z-index: 100; /* Ensures the image stays above other elements */
+}
+
+.fixed-image img {
+    width: 280px; /* Adjust the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+.photo-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between frames */
+    padding: 20px; /* Add padding around the grid */
+    justify-items: center;
+    margin-top: 150px; /* Center the items in the grid */
+}
+
+.photo-frame {
+    border: 5px solid #ffffff; /* Frame border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    border-radius: 10px; /* Optional: Rounded corners */
+    overflow: hidden; /* Ensures the image stays inside the frame */
+    background-color: #f4f4f4; /* Frame background color */
+}
+
+.photo-frame img {
+    width: 100%; /* Make the image fill the frame */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+}
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.menu-links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-links.show {
+    display: block; /* Show the menu when the class is added */
+}
