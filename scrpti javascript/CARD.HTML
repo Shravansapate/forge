@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Video Card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style> 
+            .card {
+                display: flex;
+                border: 1px solid #782121;
+                width: 700px;
+                padding: 10px;
+                gap: 15px;
+                background-color: black;
+            }
+
+            .card img {
+                width: 200px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 8%;
+                border: 3px solid #623535;
+            }
+        
+            .text-content {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .card h1 {
+                margin: 0;
+                color: #ffffff;
+                font-size: 18px;
+            }
+
+            .card h6 {
+                margin: 0;
+                color: #bfb7b7;
+                font-weight: normal;
+            }
+
+            .capsule {
+                position: absolute;
+                bottom: 8px;
+                right: 8px;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                padding: 2px 4px;
+                border-radius: 4px;
+                font-size: 12px;
+            }
+
+            .image-container {
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cards">
+            <div class="card">
+                <div class="image-container">
+                    <img src=  "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg" alt="card image">
+                    <div class="capsule">31:55</div>
+                </div>
+                <div class="text-content">
+                    <h1>JAVASCRIPT Exercise 13 - solution & shoutout</h1>
+                    <h6>Code with Harry</h6>
+                    <h6>1.7M views • 1 year ago</h6>
+                </div>
+            </div>
+        </div>
+        <script src="createcard.js"></script>
+        
+    </body>
+</html>

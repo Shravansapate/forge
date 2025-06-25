@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+      
+    <div class="container flex bg-black" >
+        <div class="left  border  rounded">
+        
+            <div class="home m-1 bg-gray rounded">
+                <img src="logo.svg" class="invert" alt="logo" ><b>Spotify</b></img>
+                <ul class="">
+                <li><img src="home.svg" class="invert " alt="home">Home</li>
+                <li><img src="search.svg" class="invert" alt="search" >Search</li>
+                </ul>
+            </div>
+            <div class="liberay  rounded m-1">
+                <h5 class="text-white gray-text ">Your Library</h5>
+                <ul class=" bg-gray items-center rounded ">
+                    <li><h5> Create your first playlist</h5></li>
+                    <li><h6>It's easy.we'll help you</h6></li>
+                    <li><button>Create Playlist</button></li>
+                </ul>   
+                
+                <ul class=" bg-gray items-center rounded ">
+                    <li><h5> Let's find some podcasts to follow</h5></li>
+                    <li><h6>We'll keep you updated on new episodes</h6></li>
+                    <li><button>Browse podcast</button></li>
+                </ul> 
+            </div>
+            <!-- Update each songItem div in your HTML -->
+<div class="songItem" data-index="0">
+    <span class="song-name">Let Me love you</span>
+    <span class="songlistplay">
+        <span class="timestamp">05:34<i class="far fa-play-circle"></i></span>
+    </span>
+</div>
+
+<div class="songItem" data-index="0">
+    <span class="song-name">Let Me love you</span>
+    <span class="songlistplay">
+        <span class="timestamp">05:34<i class="far fa-play-circle"></i></span>
+    </span>
+</div>
+            
+<div class="songItem" data-index="0">
+    <span class="song-name">Let Me love you</span>
+    <span class="songlistplay">
+        <span class="timestamp">05:34<i class="far fa-play-circle"></i></span>
+    </span>
+</div>
+
+<div class="songItem" data-index="0">
+    <span class="song-name">Let Me love you</span>
+    <span class="songlistplay">
+        <span class="timestamp">05:34<i class="far fa-play-circle"></i></span>
+    </span>
+</div>
+            
+
+<div class="songItem" data-index="0">
+    <span class="song-name">Let Me love you</span>
+    <span class="songlistplay">
+        <span class="timestamp">05:34<i class="far fa-play-circle"></i></span>
+    </span>
+</div>
+            
+
+<div class="songItem" data-index="0">
+    <span class="song-name">Let Me love you</span>
+    <span class="songlistplay">
+        <span class="timestamp">05:34<i class="far fa-play-circle"></i></span>
+    </span>
+</div>
+            
+
+<div class="songItem" data-index="0">
+    <span class="song-name">Let Me love you</span>
+    <span class="songlistplay">
+        <span class="timestamp">05:34<i class="far fa-play-circle"></i></span>
+    </span>
+</div>
+            
+            
+            <div class="left-footer">
+                 <div class="footer-links">
+                     <a href="#">Legal</a>
+                     <a href="#">Privacy Center</a>
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">Cookies</a>
+                     <a href="#">About Ads</a>
+                     <a href="#">Accessibility</a>
+                     <a href="#">Cookies</a>
+                </div>
+            </div>   
+            <div class="language-selector">
+                 <button class="language-btn">
+                    <img src="earthlog.svg" alt="globe" class="invert">
+                    English
+                </button>
+            </div>
+        </div>
+
+        <div class="right bg-black rounded">
+            
+            <div class="top-bar">
+                <div class="search-bar">
+    <div class= "header">
+       
+        <div class="auth-buttons">
+            <button class="signup-btn">Sign up</button>
+            <button class="login-btn">Log in</button>
+        </div>
+    </div>
+          
+    </div>
+
+    <div class="playbar">
+        <div class="song-info">
+            <img src="songcover.jpg" alt="Current Song">
+            <div class="song-details">
+                <span class="song-name">Song Name</span>
+                <span class="artist-name">Artist Name</span>
+            </div>
+            <button class="like-btn">
+                <img src="heart.svg" alt="Like" class="invert">
+            </button>
+        </div>
+
+        <div class="player-controls">
+            <div class="control-buttons">
+                <button class="shuffle-btn">
+                    <img src="shuffle.svg" alt="Shu">
+                </button>    
+               
+                
+                    
+               <button class= "previous-btn">
+                    <img src="previous.svg" alt="Previous" class="invert">
+                </button>
+                <button class="play-btn" id="masterplay">
+                    <img src="play.svg" alt="Play" class="invert", >
+                </button>
+                <button class="next-btn">
+                    <img src="next.svg" alt="Next" class="invert">
+                </button>
+                <button class="repeat-btn">
+                    <img src="repeat.svg" alt="Repeat" class="invert">
+                </button>
+            </div>
+            <!-- Find this section in your HTML -->
+<div class="progress-bar">
+    <span class="current-time">0:00</span>
+    <input type="range" id="myprogressBar" min="0" max="100" value="0" step="0.1">
+    <span class="total-time">0:00</span>
+</div>
+        </div>
+
+        <div class="volume-controls">
+            <button class="volume-btn ">
+                <img src="volume.svg" alt="Volume" class="invert">
+            </button>
+            <div class="volume-slider">
+                <div class="volume-filled"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+    <div class="playlists-section">
+        <div class="section-header">
+            <h2>Spotify Playlists</h2>
+            <a href="#" class="show-all">Show all</a>
+        </div>
+        
+        <div class="playlist-grid">
+            <div class="playlist-card">
+                <img src="card.jpg" alt="Happy Hits">
+                <h4>Happy Hits!</h4>
+                <p>Hits to boost your mood and fill you with...</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="Calming Acoustic">
+                <h4>Calming Acoustic</h4>
+                <p>Keep calm with instrumental acoustic...</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i.scdn.co/image/ab67616d00001e02c05d5034282ebb1a0d94a26c" alt="Christmas Classics">
+                <h4>Christmas Classics</h4>
+                <p>Timeless heart-warming classics from 1940-1980...</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i.scdn.co/image/ab67616d00001e026d73f67ed72ae8eeb251040f" alt="Lofi Chill">
+                <h4>lofi chill</h4>
+                <p>Lazy slow lofi beats for laid-back moments.</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i.scdn.co/image/ab67616d00001e02062c6573009fdebd43de443b" alt="Viral Hits">
+                <h4>Viral Hits</h4>
+                <p>Viral, trending and taking off.</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i.scdn.co/image/ab67616d00001e02dc9fa033e05148197780389c" alt="Lounge">
+                <h4>Lounge - Soft House</h4>
+                <p>Soft house music for your laid-back moments.</p>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i.scdn.co/image/ab67616d00001e02bc0ec443e91e4d89c893dd7f" alt="Christmas Jazz">
+                <h4>Cozy Christmas Jazz</h4>
+                <p>Warm instrumental versions of your favorite...</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="footer">
+        <div class="company">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Jobs</a>
+            <a href="#">For the Record</a>
+        </div>
+        <div class="communities">
+            <h4>Communities</h4>
+            <a href="#">For Artists</a>
+            <a href="#">Developers</a>
+            <a href="#">Advertising</a>
+            <a href="#">Investors</a>
+            <a href="#">Vendors</a>
+        </div>
+        <div class="useful-links">
+            <h4>Useful links</h4>
+            <a href="#">Support</a>
+            <a href="#">Free Mobile App</a>
+        </div>
+        <div class="social-links invert">
+            <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+        </div>
+    </div>
+</div>
+                
+            
+    </div>
+<script src="script.js"></script>
+
+       
+
+  
+</body>
+</html>

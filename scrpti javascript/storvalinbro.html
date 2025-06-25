@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(localStorage.getItem("name")) {
+            let storedName = localStorage.getItem("name");
+            document.write("Welcome back to the world of JavaScript, " + storedName + "<br>");
+        } else
+        {
+            
+        let a=prompt("Enter your name");
+        document.write("welcome to the world of javascript " + a + "<br>");
+       localStorage.setItem("name", a); //this will store the name in local storage
+         }
+    
+        
+    </script>
+</body>
+</html>

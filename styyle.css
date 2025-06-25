@@ -1,7 +1,7 @@
 
 
 header {
-    background-color: #141414;
+    background-color:rgb(0, 0, 0);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@ header {
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: Red;
     text-decoration: none;
@@ -28,7 +28,8 @@ header .nav-links {
 header .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
+    position: relative;
 }
 
 .hero {
@@ -36,7 +37,7 @@ header .nav-links a {
     background-image: url('https://via.placeholder.com/1920x1080');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 100px 20px;
 }
@@ -82,4 +83,36 @@ header .nav-links a {
 {
             width: 18%; /* Adjust width as needed */
             height: auto;
+}
+.tv-image {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin-left: 2vw;
+}
+
+.tv-image img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.first-section video {
+    position: absolute;
+    top: 21%;
+    left: 13%;
+    width: 73%;
+    height: 54%;
+    z-index: 1;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    color: white;
+    margin: 0 auto;
+    padding: 70px 45px;
 }
